@@ -12,6 +12,9 @@
 /env/
 MANIFEST
 coverage.*
+.idea/**
+/.idea/*
+/.idea/**
 
 !.gitignore
 !.travis.yml

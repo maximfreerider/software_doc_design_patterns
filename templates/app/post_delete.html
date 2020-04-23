@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <form action="{% url 'post_delete_url' pk=post.id %}" style="margin-left: 55px; margin-top: 35px" method="post">
+        {% csrf_token %}
+        <h3>Are you sure want to delete post - {{ post.name }} ?</h3>
+        <h4><a href="/posts/">Cancel</a></h4>
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+</body>
+</html>
