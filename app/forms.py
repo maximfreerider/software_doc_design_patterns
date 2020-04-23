@@ -1,11 +1,5 @@
 from django import forms
-from app.models import Post, Account
-
-
-class PostForm(forms.ModelForm):
-    class Meta:
-        model = Post
-        fields = ("name", "description")
+from app.models import Account
 
 
 class AccountForm(forms.ModelForm):
