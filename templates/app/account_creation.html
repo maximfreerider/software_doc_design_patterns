@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" style="text-align: center; margin-top: 65px">
+    {% csrf_token %}
+    <div>
+        <label for="username">username</label><br>
+        <input id="username"
+               name="username"
+               type="text" required="">
+    </div>
+    <div  style="margin-top: 10px">
+        <label for="name">name</label> <br>
+        <input id="name"
+               name="name"
+               type="text" required="">
+    </div>
+    <div  style="margin-top: 10px">
+        <label for="surname">surname</label> <br>
+        <input id="surname"
+               name="surname"
+               type="text" required="">
+    </div>
+    <div  style="margin-top: 10px">
+        <label for="email">email</label> <br>
+        <input id="email"
+               name="email"
+               type="text" required="">
+    </div>    <div  style="margin-top: 10px">
+        <label for="city">city</label> <br>
+        <input id="city"
+               name="city"
+               type="text" required="">
+    </div>    <div  style="margin-top: 10px">
+        <label for="country">country</label> <br>
+        <input id="country"
+               name="country"
+               type="text" required="">
+    </div>    <div  style="margin-top: 10px">
+        <label for="money">money</label> <br>
+        <input id="money"
+               name="money"
+               type="text" required="">
+    </div>    <div  style="margin-top: 10px">
+        <label for="number_of_card">number_of_card</label> <br>
+        <input id="number_of_card"
+               name="number_of_card"
+               type="text" required="">
+    </div>
+    <button type="submit" style="margin-top: 15px">Create a post</button>
+</form>
+
+</body>
+</html>
