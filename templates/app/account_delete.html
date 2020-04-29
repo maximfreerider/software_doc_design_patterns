@@ -10,7 +10,7 @@
     <form action="{% url 'account_delete_url' pk=account.id %}" style="margin-left: 55px; margin-top: 35px" method="post">
         {% csrf_token %}
         <h3>Are you sure want to delete account - {{ account.username }} ?</h3>
-        <h4><a href="/accounts/">Cancel</a></h4>
+        <h4><a href="/">Cancel</a></h4>
         <button type="submit" class="btn btn-danger">Delete</button>
     </form>
 </body>
