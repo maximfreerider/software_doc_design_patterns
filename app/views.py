@@ -21,7 +21,7 @@ class CreateAccount(View):
         form = AccountForm(request.POST)
         if form.is_valid():
             form.save()
-        return redirect("/accounts/")
+        return redirect("/")
 
 
 class DetailAccount(View):
@@ -40,7 +40,7 @@ class DeleteAccount(View):
     def post(self, request, pk):
         account = Account.objects.get(id=pk)
         account.delete()
-        return redirect("/accounts/")
+        return redirect("/")
 
 
 class UpdateAccount(View):
@@ -55,4 +55,4 @@ class UpdateAccount(View):
         updated_account = AccountForm(request.POST, instance=account)
         if updated_account.is_valid():
             updated_account.save()
-        return redirect("/accounts/")
+        return redirect("/")
