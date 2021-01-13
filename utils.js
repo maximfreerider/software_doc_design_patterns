@@ -47,6 +47,7 @@ const getPrintStrategy = () => {
     case "CONSOLE":
       return new ConsoleStrategy();
     case "EVENT_HUBS":
+      console.log('we are in EVENT_HUBS');
       return new EventHubsStrategy();
     default:
       return null;
