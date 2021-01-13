@@ -18,21 +18,28 @@ Also you need to make request, you can use for it Postman
 - After the installation ELK stack trying to request vm-public-ip:9200 and vm-public-ip:5601 in our browser for checking if it works
 - find Logic App > create Blank app > choose When event hub is listening > connect to our eventhub  
 - next step is to choose an HTTP POST method. Sending data to eventhub and checking our triggers
+
     - Logic App 
         ![](images/logicApp.jpg)
+        
     - Set up our eventHub
-    ![](images/eventLogicApp.jpg)
-- <yourIP>:9200/nosql/_search?pretty=true here we have to see our data from eventHub
+        ![](images/eventLogicApp.jpg)
+        
+- http://{yourip}:9200/nosql/_search?pretty=true here we have to see our data from eventHub
   - Data in ES
       ![](images/elastic.jpg)
       
 # Lab 7
+
 - Open Kibana > Visualize > Pie 
         ![](images/pie.jpg)  
+        
 - choose bucket > create new visualization Line with Bucket setting up for the x-axios and Split series
     ![](images/line.jpg)  
+    
 - quering using Dev Tools
       ![](images/query.jpg)
+      
 ```GET _search
 {
   "query": {
